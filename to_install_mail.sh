@@ -1,10 +1,14 @@
 sudo dnf install msmtp msmtp-mta mailx
-touch ~/.msmtprc
+# touch ~/.msmtprc
 chmod 600 ~/.msmtprc  #设置msmtp。
 
+
+cd mail_sends
+vi .msmtprc
+mv -f .msmtprc ~
+mv -f mail.rc /etc/
+
 #创建配置文件于~/.msmtprc，并确保文件权限为600
-
-
 # vi .msmtprc
 # 写入以下内容
 # defaults
