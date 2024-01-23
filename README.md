@@ -6,3 +6,7 @@ chmod +x to_install_mail.sh   授予权限
 ------
 
 ./to_install_mail.sh  运行脚本
+
+
+发送邮件
+echo '这是测试邮件' | mail -s '邮件主题' target@example.com
