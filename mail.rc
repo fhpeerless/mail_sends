@@ -1,7 +1,7 @@
 set smtp=smtp.qq.com
 set smtp-auth=login
 set smtp-auth-user=17662292@qq.com
-set smtp-auth-password=tiixbrlqyqdobhd授权码
-set from="17662292@#qq.com"
+set smtp-auth-password=tiixbrlqyqdobhdf
+set from="17662292@qq.com"
 set ssl-verify=ignore
 set nss-config-dir=/etc/pki/nssdb/
