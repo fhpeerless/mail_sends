@@ -9,7 +9,7 @@ STATUS=$?
 if [ $STATUS -eq 0 ]; then
     BALANCE=$(echo $RESPONSE | jq '.balance')
     if [ ! -z "$BALANCE" ]; then
-        echo "yu，e，shi: $BALANCE" | mail -s "export" 68208932@qq.com
+        echo "yu.e.shi: $BALANCE" | mail -s "export" 68208932@qq.com
     else
         echo "APIno=answer" | mail -s "Api error" 68208932@qq.com
     fi
