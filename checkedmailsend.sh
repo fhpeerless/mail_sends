@@ -11,7 +11,7 @@ if [ $STATUS -eq 0 ]; then
     if [ ! -z "$BALANCE" ]; then
         echo "yu，e，shi: $BALANCE" | mail -s "export" 68208932@qq.com
     else
-        echo "APIno answer。" | mail -s "Api error" 68208932@qq.com
+        echo "APIno=answer" | mail -s "Api error" 68208932@qq.com
     fi
 else
     echo "can not API." | mail -s "network error" 68208932@qq.com
