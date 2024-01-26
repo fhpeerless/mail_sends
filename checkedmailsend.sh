@@ -3,7 +3,7 @@
 API_URL="https://ec2-18-218-197-117.us-east-2.compute.amazonaws.com/balance?address=0x4b570b98FC419992CfFFa7fe92f011A4741A1Da1"
 
 # 增加了 `-m 30`，设置超时时间为 30 秒
-RESPONSE=$(curl -s -m 30 $API_URL)
+RESPONSE=$(curl -s -m 5 $API_URL)
 STATUS=$?
 
 if [ $STATUS -eq 0 ]; then
