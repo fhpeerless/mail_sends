@@ -4,9 +4,9 @@ API_URL="https://ec2-18-218-197-117.us-east-2.compute.amazonaws.com/balance?addr
 
 # 增加了 `-m 30`，设置超时时间为 30 秒
 RESPONSE=$(curl -s -m 5 $API_URL)
-STATUS=$?
+STATUS=$? # status测得上一个api查询链接是否返回成功
 
-if [ $STATUS -eq 0 ]; then
+if [ $STATUS -eq 0 ]; then  # eq为等于，
     BALANCE=$(echo $RESPONSE | jq '.balance')
     if [ ! -z "$BALANCE" ]; then
         echo "yu.e.shi: $BALANCE" | mail -s "export" 68208932@qq.com
