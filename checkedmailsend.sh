@@ -16,7 +16,7 @@ STATUS=$? # status测得上一个api查询链接是否返回成功
 if [ $STATUS -eq 0 ]; then  # eq为等于，
     BALANCE=$(echo $RESPONSE | jq '.balance')
     if [ ! -z "$BALANCE" ]; then
-        echo "yu.e.shi: $BALANCE" | mail -s "export" $YOUX
+        echo "yu.e.shi: $BALANCE" | mail -s "balance" $YOUX
     else
         echo "APIno=answer" | mail -s "Api error" $YOUX
     fi
