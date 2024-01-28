@@ -10,7 +10,7 @@ export YOUX="68208932@qq.com"
 # RESPONSE=$(curl -k -s -m 30 $API_URL)
 # RESPONSE=$(curl -k -s -m 30 $API_URL) 忽略证书
 # RESPONSE=$(curl --cacert ~/.certs/q123.crt -s -m 60 $API_URL)
-RESPONSE=$(curl -s -m 60 $API_URL)
+RESPONSE=$(curl -I -k -s -m 60 $API_URL)
 STATUS=$? # status测得上一个api查询链接是否返回成功
 
 if [ $STATUS -eq 0 ]; then  # eq为等于，
