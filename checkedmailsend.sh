@@ -3,8 +3,7 @@
 export API_URL="https://ec2-18-218-197-117.us-east-2.compute.amazonaws.com/balance?address=0x4b570b98FC419992CfFFa7fe92f011A4741A1Da1"
 export YOUX="68208932@qq.com"
 
- echo -n | openssl s_client -connect ec2-18-218-197-117.us-east-2.compute.amazonaws.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > ~/.certs/q123.crt
- # 安装查询网址的证书
+
 
 # 增加了 `-m 30`，设置超时时间为 30 秒
 
