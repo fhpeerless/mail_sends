@@ -25,6 +25,7 @@ do
   else
       EMAIL_BODY="${EMAIL_BODY}adress: ${ADDRESS}, API,loser\n"
   fi
+  sleep 15
 done
 
 echo -e "$EMAIL_BODY" | mail -s "$EMAIL_SUBJECT" $SUCCESS_EMAIL
