@@ -1,7 +1,6 @@
 #!/bin/bash
 
-export API_URL="https://ec2-18-218-197-117.us-east-2.compute.amazonaws.com/balance?address=0x4b570b98FC419992CfFFa7fe92f011A4741A1Da1"
-export YOUX="68208932@qq.com"
+
 
 export API_URL_BASE="https://ec2-18-218-197-117.us-east-2.compute.amazonaws.com/balance?address="
 export ADDRESSES=("0x1F88ac245c8e3715c22C5A9c4aEe2C8aAB279F07" "0xC77572024f24Ef5159348Fd6bBE613918db87FDF" "0x4b570b98FC419992CfFFa7fe92f011A4741A1Da1" "0xB463e29E3ec2fCeB2Db9e9398790149ADB78BD6b" "0x76A8B8fa6Db904cf7e89aa8D4CCc7FdAD1Ab0D6D")
@@ -32,7 +31,8 @@ echo -e "$EMAIL_BODY" | mail -s "$EMAIL_SUBJECT" $SUCCESS_EMAIL
 
 
 
-
+# export API_URL="https://ec2-18-218-197-117.us-east-2.compute.amazonaws.com/balance?address=0x4b570b98FC419992CfFFa7fe92f011A4741A1Da1"
+# export YOUX="68208932@qq.com"
 # 增加了 `-m 30`，设置超时时间为 30 秒
 # RESPONSE=$(curl -I -k -s -m 60 $API_URL)
 # RESPONSE=$(curl -k -s -m 30 $API_URL) 忽略证书
