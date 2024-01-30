@@ -12,7 +12,7 @@ EMAIL_BODY=""
 for ADDRESS in "${ADDRESSES[@]}"
 do
   API_URL="${API_URL_BASE}${ADDRESS}"
-  RESPONSE=$(curl --cacert ~/.certs/q123.crt -s -m 60 $API_URL)
+  RESPONSE=$(curl --cacert ~/.certs/q123.pem -s -m 60 $API_URL)
   STATUS=$?
   
   if [ $STATUS -eq 0 ]; then
